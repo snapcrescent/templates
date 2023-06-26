@@ -13,7 +13,7 @@
   <Category>Productivity: MediaApp:Video MediaApp:Photos</Category>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/snapcrescent/snapcrescent/main/snap_crescent_mobile-flutter/assets/images/logo.png</Icon>
+  <Icon>https://raw.githubusercontent.com/snapcrescent/templates/main/Unraid/Snapcrescent/Snapcrescent-Logo.png</Icon>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>

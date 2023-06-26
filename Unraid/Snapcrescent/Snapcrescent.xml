@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Snapcrescent</Name>
+  <Repository>snapcrescent/snapcrescent</Repository>
+  <Registry>https://hub.docker.com/repository/docker/snapcrescent/snapcrescent</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/snapcrescent/snapcrescent/issues/new</Support>
+  <Project>https://github.com/snapcrescent/snapcrescent</Project>
+  <Overview>Snapcrescent - Self-hosted photo and video backup solution</Overview>
+  <Category>Productivity: MediaApp:Video MediaApp:Photos</Category>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/snapcrescent/snapcrescent/main/snap_crescent_mobile-flutter/assets/images/logo.png</Icon>
+  <ExtraParams>--restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1685031723</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>MySQL/Maria Db container</Requires>
+  <Config Name="Database Type" Target="SQL_DB_TYPE" Default="" Mode="" Description="By default Snap Crescent will run using self hosted SQLITE mode.&#13;&#10;&#13;&#10;But you can use 'MYSQL' for better performance. Only if you are using mysql, then following variables are required&#13;&#10;&#13;&#10;SQL_URL&#13;&#10;SQL_USER&#13;&#10;SQL_PASSWORD&#13;&#10;" Type="Variable" Display="always" Required="true" Mask="false">MYSQL</Config>
+  <Config Name="MySql URL" Target="SQL_URL" Default="" Mode="" Description="(jdbc:mysql://IP_ADDRESS:3306/snap-crescent)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Mysql User" Target="SQL_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="SQL Password" Target="SQL_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Storage Path" Target="/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="App Data Path" Target="/db" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Host Key 5" Target="ADMIN_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"></Config>
+  <Config Name="Import-Directory" Target="/mnt" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="PORT" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+</Container>
